@@ -14,7 +14,14 @@ function App() {
   }
 
   const handleSubmit =()=>{
-    sign
+    createUserWithEmailAndPassword(auth,data.email,data.password00
+      )
+    .then((response)=>{
+      console.log(response.user)
+    })
+    .catch((err)=>{
+      alert(err.message)
+    })
   }
   
   // const addData =()=>{
